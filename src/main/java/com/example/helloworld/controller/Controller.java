@@ -14,8 +14,9 @@ public class Controller {
     public Map<String, String> hello(){
 
         Map value = new HashMap();
-        value.put("value", "hello world!");
-
+        value.put("response_type", "hello world!");
+        value.put("text", "hello world!");
+        
         return value;
     }
 }
