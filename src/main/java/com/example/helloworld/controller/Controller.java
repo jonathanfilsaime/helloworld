@@ -10,12 +10,14 @@ import java.util.Map;
 @RestController
 public class Controller {
 
-    @RequestMapping(value = "/hello", method = RequestMethod.POST)
+    @RequestMapping(value = "/hello", method = RequestMethod.GET)
     public Map<String, String> hello(){
 
         Map value = new HashMap();
         value.put("response_type", "hello world!");
         value.put("text", "hello world!");
+
+        
         
         return value;
     }
